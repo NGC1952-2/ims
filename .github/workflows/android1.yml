@@ -22,6 +22,7 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+    - name: Goof
       run: zip -d ./platforms/android-33/android.jar android/telephony/ims/feature/MmTelFeature.class android/telephony/ims/feature/MmTelFeature\$MmTelCapabilities.class
     - name: Build with Gradle
       run: ./gradlew build
